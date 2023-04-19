@@ -1,0 +1,59 @@
+参考地址：https://zhuanlan.zhihu.com/p/344306287
+
+1.打开CEF下载地址，选择需要的平台及位数进行下载
+https://cef-builds.spotifycdn.com/index.html
+
+2.下载安装doxygen用以支持cmake正常运行
+https://sourceforge.net/projects/doxygen/files/
+
+3.下载cmake
+https://cmake.org/download/
+
+4.使用cmake编译
+a：指定source、build路径
+b: 点击aonfigure  【按需要选择x64或win32】
+c: 点击generate   【正常执行完此步，build下已有vs项目】
+d: 点击openproject
+
+5.重新生成ALL_BUILD即可全部构建完成 
+注意：
+1.使用MFC的方式 【静态==MT，共享==MD】
+2.使用多字符或Unicode字符集 
+3.C++ => 代码生成中使用MT/MD配置与MFC使用方式匹配
+【每个project都需要修改保持一致】
+
+
+6.主要使用的lib + dll
+a：主动生成的libcef_dll_wrapper.lib 【注意生成的Release还是Debug】
+b: 下载时已经存在的libcef.lib		【注意选择Release或Debug文件夹】
+c: 下载时已经存在的cef_sandbox.lib	【注意选择Release或Debug文件夹】
+dll文件即对应Release或Debug文件夹的所有
+
+7.将Resources文件夹中的内容，复制到dll同级目录
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
