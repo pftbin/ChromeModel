@@ -38,7 +38,7 @@ public:
 		CefString(&settings.locale).FromWString(L"UTF-8");
 		CefString(&settings.cache_path).FromString("C:/cachepath/");
 
-#if 1
+#if 0
 		//主程序App作为Render进程
 		int exit_code = CefExecuteProcess(main_args, app.get(), nullptr);
 		if (exit_code >= 0)
@@ -91,10 +91,12 @@ public:
 
 public:
 	HICON					m_hIcon;
-	HINSTANCE				m_hInstance;
+
 	CBitmap					m_hBitmapCloseUp;
 	CBitmap					m_hBitmapCloseHover;
 	CBitmap					m_hBitmapCloseDown;
+	CBitmap					m_hBitmapMax1;
+	CBitmap					m_hBitmapRestore1;
 	CBitmap					m_hBitmapTitleBarL;
 	CBitmap					m_hBitmapTitleBarC;
 	CBitmap					m_hBitmapTitleBarR;

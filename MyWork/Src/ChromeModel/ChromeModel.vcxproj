@@ -267,6 +267,8 @@
     <Image Include="res\Close2.BMP" />
     <Image Include="res\Close3.BMP" />
     <Image Include="res\DlgBk.bmp" />
+    <Image Include="res\Max1.bmp" />
+    <Image Include="res\Restore1.BMP" />
     <Image Include="res\titlebar_bkc.bmp" />
     <Image Include="res\titlebar_bkl.bmp" />
     <Image Include="res\titlebar_bkr.bmp" />

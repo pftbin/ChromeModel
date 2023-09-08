@@ -1047,13 +1047,6 @@ LRESULT CALLBACK CTBar::MouseProc(int nCode, WPARAM wParam, LPARAM lParam)
 		m_pThis->OnLButtonDown(MK_LBUTTON, pt);
 		return ::CallNextHookEx(m_hMouseHook, nCode, wParam, lParam);
 	}
-
-	if(wParam == WM_MOUSEMOVE)
-		m_pThis->OnMouseMove(MK_LBUTTON, pt);
-	else if(wParam == WM_LBUTTONUP)
-		m_pThis->OnLButtonUp(MK_LBUTTON, pt);
-	else if(wParam == WM_LBUTTONDBLCLK)
-		m_pThis->OnLButtonDblClk(MK_LBUTTON, pt);
 	
 	return ::CallNextHookEx(m_hMouseHook, nCode, wParam, lParam);
 }

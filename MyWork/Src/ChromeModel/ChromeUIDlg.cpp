@@ -46,16 +46,17 @@ void ChromeUIDlg::DoDataExchange(CDataExchange* pDX)
 BOOL ChromeUIDlg::OnInitDialog()
 {
 	CSkinDlg::OnInitDialog();
-	ModifyStyle(WS_CAPTION | WS_THICKFRAME, 0);
+	ModifyStyle(WS_CAPTION | WS_THICKFRAME, WS_MAXIMIZEBOX);
 
 
 	SetIcon(m_hIcon, TRUE);			// 设置大图标
 	SetIcon(m_hIcon, FALSE);		// 设置小图标
-	int x = ::GetSystemMetrics(SM_CXSCREEN);
-	int y = ::GetSystemMetrics(SM_CYSCREEN);
-	x = max(x, 512); y = max(y, 256);
-	CRect rcDlg(x/8, y-10, 3*x/4, 3*y/4); //宽高3/4,居中隐藏到下方(网页加载会先白屏,加载完成再居中显示)
-	MoveWindow(rcDlg, TRUE);
+	//int x = ::GetSystemMetrics(SM_CXSCREEN);
+	//int y = ::GetSystemMetrics(SM_CYSCREEN);
+	//x = max(x, 512); y = max(y, 256);
+	//CRect rcDlg(x/8, y-10, 3*x/4, 3*y/4); //宽高3/4,居中隐藏到下方(网页加载会先白屏,加载完成再居中显示)
+	//MoveWindow(rcDlg, TRUE);
+	::SendMessage(m_hWnd, WM_SYSCOMMAND, SC_MAXIMIZE, 0);
 
 	//皮肤
 	m_hBitmapCloseUp.LoadBitmap(IDB_BITMAP_UP);
@@ -65,6 +66,14 @@ BOOL ChromeUIDlg::OnInitDialog()
 	HBITMAP hBmpHover = (HBITMAP)m_hBitmapCloseHover.m_hObject;
 	HBITMAP hBmpDown = (HBITMAP)m_hBitmapCloseDown.m_hObject;
 	m_tBar.SetCloseBtnBmp(hBmpUp, hBmpHover, hBmpDown);
+	
+	m_hBitmapMax1.LoadBitmap(IDB_BITMAP_MAX1);
+	m_hBitmapRestore1.LoadBitmap(IDB_BITMAP_RESTORE1);
+	HBITMAP hBmpMax1 = (HBITMAP)m_hBitmapMax1.m_hObject;
+	HBITMAP hBmpRestore1 = (HBITMAP)m_hBitmapRestore1.m_hObject;
+	m_tBar.SetShowMax(TRUE);
+	m_tBar.SetMaxBtnUpBmp(hBmpMax1, hBmpMax1, hBmpMax1);
+	m_tBar.SetResBtnUpBmp(hBmpRestore1, hBmpRestore1, hBmpRestore1);
 	m_tBar.SetShowMin(FALSE);
 
 	m_hBitmapTitleBarL.LoadBitmap(IDB_BITMAP_TBL);
@@ -130,13 +139,12 @@ afx_msg void ChromeUIDlg::OnSize(UINT nType, int cx, int cy)
 	//TODO: 在此处添加消息处理程序代码
 	if (m_cWebClient.get())
 	{
-		CRect rc;
-		GetClientRect(&rc);
-		rc.DeflateRect(10, 10, 10, 10);
-
 		CefRefPtr<CefBrowser> browser = m_cWebClient->GetBrowser();
 		if (browser.get())
 		{
+			CRect rc;
+			GetClientRect(&rc);
+			rc.DeflateRect(10, 10, 10, 10);
 			CefWindowHandle hwnd = browser->GetHost()->GetWindowHandle();
 			::MoveWindow(hwnd, rc.left, rc.top, rc.Width(), rc.Height(), TRUE);
 		}
@@ -199,8 +207,10 @@ afx_msg void ChromeUIDlg::OnGetMinMaxInfo(MINMAXINFO* lpMMI)
 	lpMMI->ptMinTrackSize.y = 600;
 
 	//调整最大高度与宽度
-	lpMMI->ptMaxTrackSize.x = 2560;
-	lpMMI->ptMaxTrackSize.y = 1440;
+	int width = ::GetSystemMetrics(SM_CXSCREEN);
+	int height = ::GetSystemMetrics(SM_CYSCREEN);
+	lpMMI->ptMaxTrackSize.x = width;
+	lpMMI->ptMaxTrackSize.y = height;
 
 	CSkinDlg::OnGetMinMaxInfo(lpMMI);
 }

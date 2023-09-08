@@ -119,5 +119,11 @@
     <Image Include="res\DlgBk.bmp">
       <Filter>资源文件</Filter>
     </Image>
+    <Image Include="res\Max1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Restore1.BMP">
+      <Filter>资源文件</Filter>
+    </Image>
   </ItemGroup>
 </Project>
