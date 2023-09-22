@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ChromeModel", "..\MyWork\Src\ChromeModel\ChromeModel.vcxproj", "{96F20590-3246-4D59-90C4-CF071C5B6B6E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ChromeTester", "..\MyWork\Src\ChromeTester\ChromeTester.vcxproj", "{6975B7E7-D26D-4EEC-9F59-2C40D60DF352}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ChromeRender", "..\MyWork\Src\ChromeRender\ChromeRender.vcxproj", "{85474E8A-730E-4969-8415-B59E92B0971A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96F20590-3246-4D59-90C4-CF071C5B6B6E}.Debug|x64.ActiveCfg = Debug|x64
+		{96F20590-3246-4D59-90C4-CF071C5B6B6E}.Debug|x64.Build.0 = Debug|x64
+		{96F20590-3246-4D59-90C4-CF071C5B6B6E}.Debug|x86.ActiveCfg = Debug|Win32
+		{96F20590-3246-4D59-90C4-CF071C5B6B6E}.Debug|x86.Build.0 = Debug|Win32
+		{96F20590-3246-4D59-90C4-CF071C5B6B6E}.Release|x64.ActiveCfg = Release|x64
+		{96F20590-3246-4D59-90C4-CF071C5B6B6E}.Release|x64.Build.0 = Release|x64
+		{96F20590-3246-4D59-90C4-CF071C5B6B6E}.Release|x86.ActiveCfg = Release|Win32
+		{96F20590-3246-4D59-90C4-CF071C5B6B6E}.Release|x86.Build.0 = Release|Win32
+		{6975B7E7-D26D-4EEC-9F59-2C40D60DF352}.Debug|x64.ActiveCfg = Debug|x64
+		{6975B7E7-D26D-4EEC-9F59-2C40D60DF352}.Debug|x64.Build.0 = Debug|x64
+		{6975B7E7-D26D-4EEC-9F59-2C40D60DF352}.Debug|x86.ActiveCfg = Debug|Win32
+		{6975B7E7-D26D-4EEC-9F59-2C40D60DF352}.Debug|x86.Build.0 = Debug|Win32
+		{6975B7E7-D26D-4EEC-9F59-2C40D60DF352}.Release|x64.ActiveCfg = Release|x64
+		{6975B7E7-D26D-4EEC-9F59-2C40D60DF352}.Release|x64.Build.0 = Release|x64
+		{6975B7E7-D26D-4EEC-9F59-2C40D60DF352}.Release|x86.ActiveCfg = Release|Win32
+		{6975B7E7-D26D-4EEC-9F59-2C40D60DF352}.Release|x86.Build.0 = Release|Win32
+		{85474E8A-730E-4969-8415-B59E92B0971A}.Debug|x64.ActiveCfg = Debug|x64
+		{85474E8A-730E-4969-8415-B59E92B0971A}.Debug|x64.Build.0 = Debug|x64
+		{85474E8A-730E-4969-8415-B59E92B0971A}.Debug|x86.ActiveCfg = Debug|Win32
+		{85474E8A-730E-4969-8415-B59E92B0971A}.Debug|x86.Build.0 = Debug|Win32
+		{85474E8A-730E-4969-8415-B59E92B0971A}.Release|x64.ActiveCfg = Release|x64
+		{85474E8A-730E-4969-8415-B59E92B0971A}.Release|x64.Build.0 = Release|x64
+		{85474E8A-730E-4969-8415-B59E92B0971A}.Release|x86.ActiveCfg = Release|Win32
+		{85474E8A-730E-4969-8415-B59E92B0971A}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F37A25A1-4671-47D2-BDD7-177BFA18A80A}
+	EndGlobalSection
+EndGlobal
