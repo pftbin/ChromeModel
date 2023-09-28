@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33214.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DuiLib", "..\MyWork\Src\DuiLib\DuiLib.vcxproj", "{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HookFlash", "..\MyWork\Src\HookFlash\HookFlash.vcxproj", "{CAF87436-915F-4088-BDDC-8BDAA08006D9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ChromeRender", "..\MyWork\Src\ChromeRender\ChromeRender.vcxproj", "{85474E8A-730E-4969-8415-B59E92B0971A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CEFBrowser", "..\MyWork\Src\CEFBrowser\CEFBrowser.vcxproj", "{2A11F5FD-3C0C-43AA-BC8B-273FBE42813A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		UnicodeDebug|x64 = UnicodeDebug|x64
+		UnicodeDebug|x86 = UnicodeDebug|x86
+		UnicodeRelease|x64 = UnicodeRelease|x64
+		UnicodeRelease|x86 = UnicodeRelease|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.UnicodeDebug|x64.ActiveCfg = UnicodeDebug|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.UnicodeDebug|x86.ActiveCfg = UnicodeDebug|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.UnicodeDebug|x86.Build.0 = UnicodeDebug|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.UnicodeRelease|x64.ActiveCfg = UnicodeRelease|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.UnicodeRelease|x86.ActiveCfg = UnicodeRelease|Win32
+		{E106ACD7-4E53-4AEE-942B-D0DD426DB34E}.UnicodeRelease|x86.Build.0 = UnicodeRelease|Win32
+		{CAF87436-915F-4088-BDDC-8BDAA08006D9}.UnicodeDebug|x64.ActiveCfg = UnicodeDebug|Win32
+		{CAF87436-915F-4088-BDDC-8BDAA08006D9}.UnicodeDebug|x86.ActiveCfg = UnicodeDebug|Win32
+		{CAF87436-915F-4088-BDDC-8BDAA08006D9}.UnicodeDebug|x86.Build.0 = UnicodeDebug|Win32
+		{CAF87436-915F-4088-BDDC-8BDAA08006D9}.UnicodeRelease|x64.ActiveCfg = UnicodeRelease|Win32
+		{CAF87436-915F-4088-BDDC-8BDAA08006D9}.UnicodeRelease|x86.ActiveCfg = UnicodeRelease|Win32
+		{CAF87436-915F-4088-BDDC-8BDAA08006D9}.UnicodeRelease|x86.Build.0 = UnicodeRelease|Win32
+		{85474E8A-730E-4969-8415-B59E92B0971A}.UnicodeDebug|x64.ActiveCfg = UnicodeDebug|x64
+		{85474E8A-730E-4969-8415-B59E92B0971A}.UnicodeDebug|x64.Build.0 = UnicodeDebug|x64
+		{85474E8A-730E-4969-8415-B59E92B0971A}.UnicodeDebug|x86.ActiveCfg = UnicodeDebug|Win32
+		{85474E8A-730E-4969-8415-B59E92B0971A}.UnicodeDebug|x86.Build.0 = UnicodeDebug|Win32
+		{85474E8A-730E-4969-8415-B59E92B0971A}.UnicodeRelease|x64.ActiveCfg = UnicodeRelease|x64
+		{85474E8A-730E-4969-8415-B59E92B0971A}.UnicodeRelease|x64.Build.0 = UnicodeRelease|x64
+		{85474E8A-730E-4969-8415-B59E92B0971A}.UnicodeRelease|x86.ActiveCfg = UnicodeRelease|Win32
+		{85474E8A-730E-4969-8415-B59E92B0971A}.UnicodeRelease|x86.Build.0 = UnicodeRelease|Win32
+		{2A11F5FD-3C0C-43AA-BC8B-273FBE42813A}.UnicodeDebug|x64.ActiveCfg = UnicodeDebug|x64
+		{2A11F5FD-3C0C-43AA-BC8B-273FBE42813A}.UnicodeDebug|x64.Build.0 = UnicodeDebug|x64
+		{2A11F5FD-3C0C-43AA-BC8B-273FBE42813A}.UnicodeDebug|x86.ActiveCfg = UnicodeDebug|Win32
+		{2A11F5FD-3C0C-43AA-BC8B-273FBE42813A}.UnicodeDebug|x86.Build.0 = UnicodeDebug|Win32
+		{2A11F5FD-3C0C-43AA-BC8B-273FBE42813A}.UnicodeRelease|x64.ActiveCfg = UnicodeRelease|x64
+		{2A11F5FD-3C0C-43AA-BC8B-273FBE42813A}.UnicodeRelease|x64.Build.0 = UnicodeRelease|x64
+		{2A11F5FD-3C0C-43AA-BC8B-273FBE42813A}.UnicodeRelease|x86.ActiveCfg = UnicodeRelease|Win32
+		{2A11F5FD-3C0C-43AA-BC8B-273FBE42813A}.UnicodeRelease|x86.Build.0 = UnicodeRelease|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {463EBC7C-4ED8-48F3-8668-7BEBEB35DB0E}
+	EndGlobalSection
+EndGlobal
